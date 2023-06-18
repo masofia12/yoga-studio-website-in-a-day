@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    {% include head.html %}
+    
+</head>
+<body>
+<!---------------------------------  Navigation --------------------------->   
+
+<header class="md:absolute top-0 left-0 right-0 md:flex justify-between py-8 px-5p text-center md:text-left">
+    <h2 class="mb-0 text-2xl">
+        <a href="/index.html"> The Yoga Studio </a>
+    </h2>
+    <nav class="py-4 md:p-0">
+        <a href="/classes.html">Our classes</a>
+        <a href="/schedule.html">Schedule</a>
+        <a class="pr-0" href="/contact.html">Contact</a>
+    </nav> 
+</header>
+
+<!---------------------------------  Banner Image  --------------------------->   
+
+<section class="border-b-2">
+    <div class="{{page.background-position}} bg-cover max-w-screen-3xl mx-auto px-5p 
+                    {% if page.indented-banner == true %} ml-[30vw] {% endif %}" 
+            style="background-image:url('{{page.banner-image}}');">
+    
+        <div class="flex items-center min-h-90">
+            <div class="{% if page.indented-banner == true %} -ml-[30vw] {% endif %}">
+                <hr class="border-b-0 border-2 mb-4 -ml-[5vw] w-[60%]">
+                {% if page.small-top-text  %}
+                <h2 class="text-base font-sans uppercase tracking-widest">{{page.small-top-text}}</h2>
+                {% endif %}
+                
+                <h1 class="mb-0 font-serif capitalize text-6xl">{{page.heading}}</h1> 
+            </div>
+        </div>
+    </div>
+</section>
+
+{% comment %}
+    <!-- <section class="flex justify-between" style="min-height: calc(100vh - 100px) ;">
+    <img src="{{page.banner-image}}" alt="{{page.banner-image-alt}}" class="absolute h-full  
+    {% if page.banner-style == 'cropped' %}
+    top-0
+    left-[25%]
+    w-[75%]
+    {% endif %}
+    {% if page.banner-style == 'full' %}
+    top-0
+    w-full
+    {% endif %}
+    object-cover
+    -z-10">
+        <div class="mr-[50%]"> 
+        
+           {% if page.small-top-text  %}
+          
+           <h3 class="text-2xl font-sans uppercase">{{page.small-top-text}}</h3>
+        
+           {% endif %}
+           <h2 class="pb-4 {{page.heading-text-size}} font-serif text-4xl mb-2"> {{page.heading}} </h2> 
+           <h3 class="text-2xl font-sans"> {{page.sub-heading}} </h3> 
+          
+           {% if page.banner_url  %}
+          
+           <a class="pt-4 uppercase border-black text-black border-b text-2xl font-sans inline-block" href="{{page.banner_url}}">Read more</a>
+        
+           {% endif %}
+           
+        </div> 
+    </section>  -->
+{% endcomment %}
+
+{{content}}
+
+</body>
+
+<!----------------------- Footer ------------------->
+
+<footer class="bg-copper uppercase text-white">
+    <div class="md:grid md:grid-cols-5 px-5p py-[2%] gap-10p">
+        <div>
+            <a class="font-serif tracking-wider block text-xl" href="/classes.html">Our classes</a>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+        
+        <div class="my-4 md:m-0">
+            <a class="font-serif tracking-wider block text-xl" href="/schedule.html">Schedule</a>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+        
+        <div>
+            <a class="font-serif tracking-wider block text-xl" class="pr-0" href="/contact.html">Contact</a>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+        
+        <div class="col-span-2 md:text-right ml-auto  my-4 md:my-0">
+            <h3 class="tracking-wider text-lg">Subscribe to our newsletter</h3>
+            <form> 
+                <input class="mb-4 md:text-right border-2 border-white bg-copper block" type="email" name="_replyto" id="_replyto"/>
+                <a type="submit" class="button bg-white text-copper inline-block font-bold">Subscribe</a>
+            </form>
+        </div>
+
+    </div>
+    
+    <div class="border-t-2 border-white">
+        <h3 class="uppercase pl-5p py-4 font-sans mb-0">Terms of use</h3>
+    </div>
+
+</footer>

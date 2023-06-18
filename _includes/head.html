@@ -1,0 +1,49 @@
+<!------------ Technical Metadata  --------------------------------->
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+
+<!------------ SEO Metadata  --------------------------------->
+<title> {{page.seo.title }} </title> 
+<meta name="description" content="{{page.seo.description }}">
+<meta name="keywords" content="{{page.seo.keywords }}">
+
+{% if page.seo.hide-from-google == true %}
+    <meta name="robots" content="noindex, nofollow">
+{% else %}
+     <meta name="robots" content="index, follow">
+{% endif %}
+
+<!------------  Social media sharing META Tags ------------>
+<meta property="og:title" content="{{ page.title }}">
+<meta property="og:description" content="{{ page.seo.description }}"> 
+<meta property="og:image" content="{{ page.seo.social_image }}">
+<meta property="og:url" content="{{ site.url }}{{ page.url }}">
+
+<!--------------------------- Google Fonts ----------------------->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Oranienbaum&family=Poppins:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+
+<link href="/assets/css/output-style.css">
+
+
+<!------------ Tailwind Stylesheet  ------------>
+<link rel="stylesheet" type="text/css" href="/assets/css/output-style.css">
+
+
+<!------------ Pinterest Meta Tags ------------>
+<meta property="article:author" content="{{ page.author | default: site.seo.author }}" />
+
+
+<!-- Font Awesome Version 5 for Icons  -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/iconoir-icons/iconoir@main/css/iconoir.css">
+ 
+
+
+<!-- Custom Stylesheet  -->
+<link rel="stylesheet" type="text/css" href="/editor.css" />
+<!-- <link rel="stylesheet" type="text/css" href="/style.css" /> -->

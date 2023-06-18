@@ -8,6 +8,13 @@
 
 @layer base {
 
+    html{
+        @apply sm:border-blue md:border-purple lg:border-teal border-8;
+    }
+    
+    body{
+        @apply text-copper bg-light;
+    }
     h1, h2, h3, h4  {
         @apply font-serif mb-[0.5em];
     }
@@ -15,9 +22,21 @@
     h1 {
         @apply text-3xl leading-tight;
     }
+
+    h2 {
+        @apply text-3xl leading-tight;
+    }
     
     p {
         @apply mb-[0.5em] leading-normal;
+    }
+
+    nav a {
+        @apply tracking-wider uppercase py-2 pr-4;
+    }
+
+    div, nav, header, section {
+        /* border: 1px solid white */
     }
 
   }
@@ -27,12 +46,8 @@
 
 @layer components {
 
-    .tag {
-        @apply text-sm inline-block p-1 uppercase tracking-wide text-stone-600;
-    }
-
     .button  {
-        @apply inline-block px-4 py-2 uppercase tracking-wide bg-zinc-800 text-white ;
+        @apply inline-block px-4 py-2 uppercase font-sans tracking-widest bg-copper text-white;
     }
     
 }

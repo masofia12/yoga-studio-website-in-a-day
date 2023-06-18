@@ -1,0 +1,37 @@
+---
+layout: default
+indented-banner: true
+heading: Our classes
+banner-image: /images/jempinis-3.jpg
+banner-image-alt: 
+background-position: bg-[position:50%_16%]
+---
+
+<!-------------------------------------- Classes ----------------------------------->
+
+<section class="py-5p md:p-5p bg-light">
+    <div class="max-w-screen-xlg mx-auto">
+      
+      <div class="px-5p overflow-x-scroll flex flex-nowrap
+                  md:px-0 md:grid md:grid-cols-3 md:gap-[2%] md:overflow-x-hidden">
+        
+        {% for class in site.classes limit: 3 %}    
+  
+        <div class="w-4/5 flex-shrink-0 text-center mr-4 border-copper border-2
+                    md:w-auto md:col-span-1 md:mr-0">  
+          <div class="aspect-square relative border-2 m-5p">
+            <img class="object-cover absolute inset-0 h-full w-full" src="{{class.image}}" alt="{{class.image-alt}}"></div>
+          <div class="">
+            <h3 class="font-serif text-center text-2xl">{{class.heading}}</h3>
+            <hr class="border-b-0 border-2 mb-4">
+            <p class="mt-5p text-center p-2">{{class.description}}</p>
+            <a class="button mb-5p">Sign up</a>
+          </div>
+        </div>
+  
+        {% endfor %}
+  
+      </div>
+  
+    </div>
+  </section> 

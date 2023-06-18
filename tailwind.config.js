@@ -8,8 +8,17 @@ module.exports = {
     ],
     theme: {
       fontFamily: {
-        sans: ['Montserrat', 'sans-serif'],
-        serif: ['Italiana', 'serif'],
+        sans: ['Poppins', 'sans-serif'],
+        serif: ['Oranienbaum', 'serif'],
+      },
+      colors: {
+        'copper': '#C97324',
+        'light': '#FBF2E9',
+        'white': '#FFFFFF',
+        'black': '#000000',
+        'blue': '#0000FF',
+        'purple': '#A020F0',
+        'teal': '#008080'
       },
       extend: {
         spacing: {
@@ -30,6 +39,10 @@ module.exports = {
           '60': '60vh',
           '50': '50vh',
         },
+        screens: {
+            '3xl': '2000px',
+            // => @media (min-width: 992px) { ... }
+          },
       },
     },
     plugins: [
