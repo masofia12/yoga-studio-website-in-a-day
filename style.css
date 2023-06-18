@@ -51,3 +51,74 @@
     }
     
 }
+
+/* all at once */
+#momence-embed #momence-plugin-host-schedule * {
+    @apply text-copper bg-light font-sans font-light rounded-none border-copper;
+} 
+
+#momence-embed #momence-plugin-host-schedule .dImvNj {
+    @apply p-0;
+}
+
+#momence-embed #momence-plugin-host-schedule {
+    @apply text-copper;
+}
+
+/* Class name */
+#momence-embed #momence-plugin-host-schedule .kKtlJb {
+    @apply text-copper font-serif;
+}
+
+/* Hide featured image */
+
+#momence-embed #momence-plugin-host-schedule .jQbyba {
+    display: none;
+}
+
+
+/* Styling the button */
+#momence-embed #momence-plugin-host-schedule .momence-host_schedule-session_list-item-booked_button {
+    @apply inline-block px-4 py-2 uppercase tracking-wide bg-copper text-light rounded-none whitespace-nowrap;
+}
+
+
+/* Hide teacher image */
+#momence-embed #momence-plugin-host-schedule .eyVeLy {
+    display: none;
+}
+
+/* Hide description  */
+#momence-embed #momence-plugin-host-schedule .cHYCdu {
+    display: none;
+}
+
+/* Hide class tag above name  */
+#momence-embed #momence-plugin-host-schedule .igpvGC {
+    display: none;
+}
+
+/* Hide line between book button and class description  */
+#momence-embed #momence-plugin-host-schedule .kllAKy {
+    display: none;
+}
+
+/* border in select buttons */
+#momence-embed #momence-plugin-host-schedule .bIbgHD {
+    @apply text-copper rounded-none border-0;
+}
+
+/* classes text top left */
+#momence-embed #momence-plugin-host-schedule .henUQy {
+    @apply font-serif text-2xl;
+}
+
+
+#momence-embed #momence-plugin-host-schedule .momence-host_schedule-powered_by_momence {
+    display: none;
+}
+
+#momence-embed #momence-plugin-host-schedule .gZOyVg::after {
+    @apply bg-copper
+}
+

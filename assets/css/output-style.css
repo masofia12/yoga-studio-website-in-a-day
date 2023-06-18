@@ -795,6 +795,105 @@ div, nav, header, section {
 
 /* ----------- ADDITIONAL COMPONENTS  --------- */
 
+/* all at once */
+#momence-embed #momence-plugin-host-schedule * {
+  border-radius: 0px;
+  --tw-border-opacity: 1;
+  border-color: rgb(201 115 36 / var(--tw-border-opacity));
+  --tw-bg-opacity: 1;
+  background-color: rgb(251 242 233 / var(--tw-bg-opacity));
+  font-family: Poppins, sans-serif;
+  font-weight: 300;
+  --tw-text-opacity: 1;
+  color: rgb(201 115 36 / var(--tw-text-opacity));
+} 
+
+#momence-embed #momence-plugin-host-schedule .dImvNj {
+  padding: 0px;
+}
+
+#momence-embed #momence-plugin-host-schedule {
+  --tw-text-opacity: 1;
+  color: rgb(201 115 36 / var(--tw-text-opacity));
+}
+
+/* Class name */
+#momence-embed #momence-plugin-host-schedule .kKtlJb {
+  font-family: Oranienbaum, serif;
+  --tw-text-opacity: 1;
+  color: rgb(201 115 36 / var(--tw-text-opacity));
+}
+
+/* Hide featured image */
+
+#momence-embed #momence-plugin-host-schedule .jQbyba {
+    display: none;
+}
+
+
+/* Styling the button */
+#momence-embed #momence-plugin-host-schedule .momence-host_schedule-session_list-item-booked_button {
+  display: inline-block;
+  white-space: nowrap;
+  border-radius: 0px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(201 115 36 / var(--tw-bg-opacity));
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
+  --tw-text-opacity: 1;
+  color: rgb(251 242 233 / var(--tw-text-opacity));
+}
+
+
+/* Hide teacher image */
+#momence-embed #momence-plugin-host-schedule .eyVeLy {
+    display: none;
+}
+
+/* Hide description  */
+#momence-embed #momence-plugin-host-schedule .cHYCdu {
+    display: none;
+}
+
+/* Hide class tag above name  */
+#momence-embed #momence-plugin-host-schedule .igpvGC {
+    display: none;
+}
+
+/* Hide line between book button and class description  */
+#momence-embed #momence-plugin-host-schedule .kllAKy {
+    display: none;
+}
+
+/* border in select buttons */
+#momence-embed #momence-plugin-host-schedule .bIbgHD {
+  border-radius: 0px;
+  border-width: 0px;
+  --tw-text-opacity: 1;
+  color: rgb(201 115 36 / var(--tw-text-opacity));
+}
+
+/* classes text top left */
+#momence-embed #momence-plugin-host-schedule .henUQy {
+  font-family: Oranienbaum, serif;
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+
+#momence-embed #momence-plugin-host-schedule .momence-host_schedule-powered_by_momence {
+    display: none;
+}
+
+#momence-embed #momence-plugin-host-schedule .gZOyVg::after {
+  --tw-bg-opacity: 1;
+  background-color: rgb(201 115 36 / var(--tw-bg-opacity));
+}
+
 @media (min-width: 768px) {
   .md\:absolute {
     position: absolute;
@@ -869,3 +968,4 @@ div, nav, header, section {
     text-align: right;
   }
 }
+
