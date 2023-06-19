@@ -10,14 +10,32 @@
 <!---------------------------------  Navigation --------------------------->   
 
 <header class="md:absolute top-0 left-0 right-0 md:flex justify-between py-8 px-5p text-center md:text-left">
+    
+    <!-- <div class="absolute bg-light right-5p w-12 h-12 rounded-full cursor-pointer burger-button">
+        <nav class="burger-menu absolute right-6 flex w-0 overflow-hidden border-light bg-light h-full align-center border rounded-l-3xl">
+          <a href="/schedule" class="px-4">schedule</a>
+          <a href="/classes" class="px-4">classes</a>
+          <a href="/contact" class="px-4">contact</a>
+        </nav>
+     </div> -->
+
+     <div class="absolute bg-light right-5p w-12 h-12 rounded-full cursor-pointer burger-button">
+        <nav class="burger-menu absolute right-0 w-0 h-0 overflow-hidden border-light bg-light align-center border rounded-3xl">
+            <span class="px-4 text-right">X</span> 
+          <a href="/schedule" class="px-4">schedule</a>
+          <a href="/classes" class="px-4 my-4">classes</a>
+          <a href="/contact" class="px-4">contact</a>
+        </nav>
+     </div>
+    
     <h2 class="mb-0 text-2xl">
         <a href="/index.html"> The Yoga Studio </a>
     </h2>
-    <nav class="py-4 md:p-0">
+    <!-- <nav class="py-4 md:p-0">
         <a href="/classes.html">Our classes</a>
         <a href="/schedule.html">Schedule</a>
         <a class="pr-0" href="/contact.html">Contact</a>
-    </nav> 
+    </nav>  -->
 </header>
 
 <!---------------------------------  Banner Image  --------------------------->   
@@ -76,7 +94,7 @@
 
 {{content}}
 
-</body>
+
 
 <!----------------------- Footer ------------------->
 
@@ -112,3 +130,8 @@
     </div>
 
 </footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/ScrollTrigger.min.js"></script>
+<script src="/main.js"></script>
+</body>
