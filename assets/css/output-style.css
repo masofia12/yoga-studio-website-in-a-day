@@ -671,6 +671,9 @@ div, nav, header, section {
 .bg-\[position\:50\%_16\%\] {
   background-position: 50% 16%;
 }
+.bg-\[position\:50\%_85\%\] {
+  background-position: 50% 85%;
+}
 .bg-center {
   background-position: center;
 }
@@ -689,6 +692,10 @@ div, nav, header, section {
 }
 .p-\[5vw\] {
   padding: 5vw;
+}
+.px-15p {
+  padding-left: 15%;
+  padding-right: 15%;
 }
 .px-5p {
   padding-left: 5%;
@@ -727,6 +734,9 @@ div, nav, header, section {
 }
 .text-center {
   text-align: center;
+}
+.text-right {
+  text-align: right;
 }
 .font-sans {
   font-family: Poppins, sans-serif;
@@ -787,6 +797,10 @@ div, nav, header, section {
 }
 .bg-blend-overlay {
   background-blend-mode: overlay;
+}
+.outline-none {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
 }
 
 
@@ -894,6 +908,49 @@ div, nav, header, section {
   background-color: rgb(201 115 36 / var(--tw-bg-opacity));
 }
 
+.placeholder\:tracking-widest::-moz-placeholder {
+  letter-spacing: 0.1em;
+}
+
+.placeholder\:tracking-widest::placeholder {
+  letter-spacing: 0.1em;
+}
+
+.placeholder\:text-copper::-moz-placeholder {
+  --tw-text-opacity: 1;
+  color: rgb(201 115 36 / var(--tw-text-opacity));
+}
+
+.placeholder\:text-copper::placeholder {
+  --tw-text-opacity: 1;
+  color: rgb(201 115 36 / var(--tw-text-opacity));
+}
+
+.hover\:border-2:hover {
+  border-width: 2px;
+}
+
+.hover\:border-copper:hover {
+  --tw-border-opacity: 1;
+  border-color: rgb(201 115 36 / var(--tw-border-opacity));
+}
+
+.hover\:bg-light:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(251 242 233 / var(--tw-bg-opacity));
+}
+
+.hover\:text-copper:hover {
+  --tw-text-opacity: 1;
+  color: rgb(201 115 36 / var(--tw-text-opacity));
+}
+
+@media (min-width: 640px) {
+  .sm\:mt-10p {
+    margin-top: 10%;
+  }
+}
+
 @media (min-width: 768px) {
   .md\:absolute {
     position: absolute;
@@ -910,6 +967,9 @@ div, nav, header, section {
   }
   .md\:mr-0 {
     margin-right: 0px;
+  }
+  .md\:mt-5p {
+    margin-top: 5%;
   }
   .md\:flex {
     display: flex;
@@ -968,4 +1028,5 @@ div, nav, header, section {
     text-align: right;
   }
 }
+
 
